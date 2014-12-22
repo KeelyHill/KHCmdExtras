@@ -2,7 +2,7 @@ KHCmdExtras
 ----------
 
 A small extension for Python's cmd module that can function as a boiler plate.
-All vanilla features still apply
+All vanilla features still apply.
 
 Usage
 -----
