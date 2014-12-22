@@ -7,8 +7,6 @@ All vanilla features still apply
 Usage
 -----
 
-See example.py for a complete file.
-
     class Example(cmdextras.KHCmdExtras):
         def do_greet(self, line):
             print("Hello world")
