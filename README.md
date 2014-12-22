@@ -6,10 +6,11 @@ All vanilla features still apply
 
 Usage
 -----
+```python
+class Example(cmdextras.KHCmdExtras):
+    def do_greet(self, line):
+        print("Hello world")
 
-    class Example(cmdextras.KHCmdExtras):
-        def do_greet(self, line):
-            print("Hello world")
-
-    if __name__ == '__main__':
-        Example().cmdloop()
+if __name__ == '__main__':
+    Example().cmdloop()
+```
