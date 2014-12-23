@@ -54,11 +54,11 @@ class KHCmdExtras(cmd.Cmd):
 
 
 class colors:
-    HEADER = '\033[95m'  # purple/pink
-    OKBLUE = '\033[94m'  # blue
-    OKGREEN = '\033[92m'   # green
-    WARNING = '\033[93m'  # yellow
-    FAIL = '\033[91m'  # red
+    HEADER = '\033[35m'  # purple/pink
+    OKBLUE = '\033[34m'  # blue
+    OKGREEN = '\033[32m'   # green
+    WARNING = '\033[33m'  # yellow
+    FAIL = '\033[31m'  # red
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
     END = '\033[0m'  # always include at end of style
