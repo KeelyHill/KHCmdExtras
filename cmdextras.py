@@ -7,7 +7,7 @@ All vanilla features still apply
 __author__ = "Keely Hill"
 __copyright__ = "Copyright (c) 2014, Keely Hill"
 __license__ = "MIT"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __maintainer__ = "Keely Hill"
 
 import cmd
