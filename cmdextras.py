@@ -33,7 +33,10 @@ class KHCmdExtras(cmd.Cmd):
 
     def do_restart(self, line):
         """Restarts the program. Useful for on the fly code changes."""
-        os.execl(sys.executable, *([sys.executable] + sys.argv))
+        try:
+            os.execl(sys.executable, *([sys.executable] + sys.argv))
+        except Exception as e:
+            print("This function can't work here due to error: %s" % e)
         return True
 
     def do_re(self, line):
@@ -46,7 +49,7 @@ class KHCmdExtras(cmd.Cmd):
         """
         try:
             exec(line)
-        except Exception, e:
+        except Exception as e:
             print(e)
 
     def do_EOF(self, line):
@@ -54,7 +57,7 @@ class KHCmdExtras(cmd.Cmd):
 
 
 class colors:
-    HEADER = '\033[35m'  # purple/pink
+    HEADER = '\033[35m'  # purple
     OKBLUE = '\033[34m'  # blue
     OKGREEN = '\033[32m'   # green
     WARNING = '\033[33m'  # yellow
